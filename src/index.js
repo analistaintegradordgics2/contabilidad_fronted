@@ -1,4 +1,4 @@
-import routes from "./routes/contabilidad.routes"
+import routes from "./routes/contabilidad_routes"
 
 export default {
 
