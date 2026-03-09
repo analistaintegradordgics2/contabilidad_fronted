@@ -4,7 +4,7 @@ const routes = [
   {
     path: '/contabilidad/plan_cuentas',
     name: 'plandecuentas',
-    component: () => import('../contabilidad/captura_datos/plancuentas/index.vue'),
+    component: () => import('contabilidad_frontend/src/modules/contabilidad/captura_datos/plancuentas/index.vue'),
     meta: {
       breadcrumbs: [
         // { label: 'Gestión Contable', to: { name: 'home' } },
@@ -16,7 +16,7 @@ const routes = [
   {
     path: '/contabilidad/plan_cuentas/crear',
     name: 'crearplandecuentas',
-    component: () => import('../contabilidad/captura_datos/plancuentas/partial/crear.vue'),
+    component: () => import('contabilidad_frontend/src/modules/contabilidad/captura_datos/plancuentas/partial/crear.vue'),
     meta: {
       breadcrumbs: [
         // { label: 'Gestión Contable', to: { name: 'home' } },
@@ -31,7 +31,7 @@ const routes = [
   {
     path: '/contabilidad/conceptos',
     name: 'conceptos',
-    component: () => import('../contabilidad/captura_datos/conceptos/index.vue'),
+    component: () => import('contabilidad_frontend/src/modules/contabilidad/captura_datos/conceptos/index.vue'),
     meta: {
       breadcrumbs: [
         // { label: 'Gestión Contable', to: { name: 'home' } },
@@ -44,7 +44,7 @@ const routes = [
   {
     path: '/contabilidad/conceptos/crear',
     name: 'crearconceptos',
-    component: () => import('../contabilidad/captura_datos/conceptos/partial/crear.vue'),
+    component: () => import('contabilidad_frontend/src/modules/contabilidad/captura_datos/conceptos/partial/crear.vue'),
     meta: {
       breadcrumbs: [
         // { label: 'Gestión Contable', to: { name: 'home' } },
@@ -60,7 +60,7 @@ const routes = [
   {
     path: '/contabilidad/tipodocumentos',
     name: 'tipodocumentos',
-    component: () => import('../contabilidad/captura_datos/tipodocumentos/index.vue'),
+    component: () => import('contabilidad_frontend/src/modules/contabilidad/captura_datos/tipodocumentos/index.vue'),
     meta: {
       breadcrumbs: [
         { label: 'Gestión Contable', to: { name: 'home' } },
@@ -73,7 +73,7 @@ const routes = [
   {
     path: '/contabilidad/tipodocumentos/crear',
     name: 'creartipodocumentos',
-    component: () => import('../contabilidad/captura_datos/tipodocumentos/partial/crear.vue'),
+    component: () => import('contabilidad_frontend/src/modules/contabilidad/captura_datos/tipodocumentos/partial/crear.vue'),
     meta: {
       breadcrumbs: [
         { label: 'Gestión Contable', to: { name: 'home' } },
@@ -89,7 +89,7 @@ const routes = [
   {
     path: '/contabilidad/centros_costos',
     name: 'centroscostos',
-    component: () => import('../contabilidad/captura_datos/centro_costos/index.vue'),
+    component: () => import('contabilidad_frontend/src/modules/contabilidad/captura_datos/centro_costos/index.vue'),
     meta: {
       breadcrumbs: [
         // { label: 'Gestión Contable', to: { name: 'home' } },
@@ -102,7 +102,7 @@ const routes = [
   {
     path: '/contabilidad/centros_costos/crear',
     name: 'crearcentroscostos',
-    component: () => import('../contabilidad/captura_datos/centro_costos/partial/crear.vue'),
+    component: () => import('contabilidad_frontend/src/modules/contabilidad/captura_datos/centro_costos/partial/crear.vue'),
     meta: {
       breadcrumbs: [
         { label: 'Gestión Contable', to: { name: 'home' } },
@@ -117,7 +117,7 @@ const routes = [
   {
     path: '/contabilidad/bancos',
     name: 'bancos',
-    component: () => import('../contabilidad/captura_datos/bancos/index.vue'),
+    component: () => import('contabilidad_frontend/src/modules/contabilidad/captura_datos/bancos/index.vue'),
     meta: {
       breadcrumbs: [
         // { label: 'Gestión Contable', to: { name: 'home' } },
@@ -130,7 +130,7 @@ const routes = [
   {
     path: '/contabilidad/bancos/crear',
     name: 'crearbancos',
-    component: () => import('../contabilidad/captura_datos/bancos/partial/crear.vue'),
+    component: () => import('contabilidad_frontend/src/modules/contabilidad/captura_datos/bancos/partial/crear.vue'),
     meta: {
       breadcrumbs: [
         { label: 'Gestión Contable', to: { name: 'home' } },
@@ -145,7 +145,7 @@ const routes = [
   {
     path: '/contabilidad/cuentas_bancarias',
     name: 'cuentas_bancarias',
-    component: () => import('../contabilidad/captura_datos/cuentas_bancarias/index.vue'),
+    component: () => import('contabilidad_frontend/src/modules/contabilidad/captura_datos/cuentas_bancarias/index.vue'),
     meta: {
       breadcrumbs: [
         // { label: 'Gestión Contable', to: { name: 'home' } },
@@ -158,7 +158,7 @@ const routes = [
   {
     path: '/contabilidad/cuentas_bancarias/crear',
     name: 'crearcuentas_bancarias',
-    component: () => import('../contabilidad/captura_datos/cuentas_bancarias/partial/crear.vue'),
+    component: () => import('contabilidad_frontend/src/modules/contabilidad/captura_datos/cuentas_bancarias/partial/crear.vue'),
     meta: {
       breadcrumbs: [
         { label: 'Gestión Contable', to: { name: 'home' } },
@@ -173,7 +173,7 @@ const routes = [
   {
     path: '/contabilidad/procesos/documentos',
     name: 'documentos',
-    component: () => import('../contabilidad/procesos/documentos/index.vue'),
+    component: () => import('contabilidad_frontend/src/modules/contabilidad/procesos/documentos/index.vue'),
     meta: {
       breadcrumbs: [
         // { label: 'Gestión Contable', to: { name: 'home' } },
@@ -185,7 +185,7 @@ const routes = [
   {
     path: '/contabilidad/procesos/documentos/crear/:tipodocumento',
     name: 'creardocumentos',
-    component: () => import('../contabilidad/procesos/documentos/partial/crear.vue'),
+    component: () => import('contabilidad_frontend/src/modules/contabilidad/procesos/documentos/partial/crear.vue'),
     meta: {
       breadcrumbs: [
         { label: 'Gestión Contable', to: { name: 'home' } },
@@ -199,7 +199,7 @@ const routes = [
   {
     path: '/contabilidad/procesos/documento/:documento, :tipodocumento, :id_doc',
     name: 'verdocumento',
-    component: () => import('../contabilidad/procesos/documentos/partial/crear.vue'),
+    component: () => import('contabilidad_frontend/src/modules/contabilidad/procesos/documentos/partial/crear.vue'),
     meta: {
       breadcrumbs: [
         // { label: 'Gestión Contable', to: { name: 'home' } },
@@ -215,7 +215,7 @@ const routes = [
   {
     path: '/contabilidad/procesos/informe-diario-caja',
     name: 'infdiariocaja',
-    component: () => import('../contabilidad/procesos/infdiariocaja/index.vue'),
+    component: () => import('contabilidad_frontend/src/modules/contabilidad/procesos/infdiariocaja/index.vue'),
     meta: {
       breadcrumbs: [
         // { label: 'Gestión Contable', to: { name: 'home' } },
@@ -227,7 +227,7 @@ const routes = [
   {
     path: '/contabilidad/procesos/contabilizacion-por-planos',
     name: 'conta_por_plano',
-    component: () => import('../contabilidad/procesos/conta_planos/index.vue'),
+    component: () => import('contabilidad_frontend/src/modules/contabilidad/procesos/conta_planos/index.vue'),
     meta: {
       breadcrumbs: [
         // { label: 'Gestión Contable', to: { name: 'home' } },
@@ -242,7 +242,7 @@ const routes = [
   {
     path: '/contabilidad/procesos/conciliacion_bancararia',
     name: 'conciliacion_bancararia',
-    component: () => import('../contabilidad/procesos/conciliacion_bancaria/index.vue'),
+    component: () => import('contabilidad_frontend/src/modules/contabilidad/procesos/conciliacion_bancaria/index.vue'),
     meta: {
       breadcrumbs: [
         // { label: 'Contabilidad', to: { name: 'home' } },
@@ -257,7 +257,7 @@ const routes = [
   {
     path: '/contabilidad/consultas/auxiliar-codigo-nit',
     name: 'auxcodigonit',
-    component: () => import('../contabilidad/consultas/auxiliarcodigonit/index.vue'),
+    component: () => import('contabilidad_frontend/src/modules/contabilidad/consultas/auxiliarcodigonit/index.vue'),
     meta: {
       breadcrumbs: [
         // { label: 'Gestión Contable', to: { name: 'home' } },
@@ -269,7 +269,7 @@ const routes = [
   {
     path: '/contabilidad/consultas/auxiliar-bancos',
     name: 'auxbancos',
-    component: () => import('../contabilidad/consultas/auxiliarbancos/index.vue'),
+    component: () => import('contabilidad_frontend/src/modules/contabilidad/consultas/auxiliarbancos/index.vue'),
     meta: {
       breadcrumbs: [
         // { label: 'Gestión Contable', to: { name: 'home' } },
@@ -281,7 +281,7 @@ const routes = [
   {
     path: '/contabilidad/consultas/balance-general',
     name: 'balancegeneral',
-    component: () => import('../contabilidad/consultas/balancegeneral/index.vue'),
+    component: () => import('contabilidad_frontend/src/modules/contabilidad/consultas/balancegeneral/index.vue'),
     meta: {
       breadcrumbs: [
         // { label: 'Gestión Contable', to: { name: 'home' } },
@@ -294,7 +294,7 @@ const routes = [
   {
     path: '/contabilidad/consultas/balance-prueba',
     name: 'balanceprueba',
-    component: () => import('../contabilidad/consultas/balanceprueba/index.vue'),
+    component: () => import('contabilidad_frontend/src/modules/contabilidad/consultas/balanceprueba/index.vue'),
     meta: {
       breadcrumbs: [
         // { label: 'Gestión Contable', to: { name: 'home' } },
@@ -307,7 +307,7 @@ const routes = [
   {
     path: '/contabilidad/consultas/estado-de-resultados',
     name: 'estadoresultados',
-    component: () => import('../contabilidad/consultas/estadoresultados/index.vue'),
+    component: () => import('contabilidad_frontend/src/modules/contabilidad/consultas/estadoresultados/index.vue'),
     meta: {
       breadcrumbs: [
         // { label: 'Gestión Contable', to: { name: 'home' } },
@@ -319,7 +319,7 @@ const routes = [
   {
     path: '/contabilidad/consultas/comprobante-diario',
     name: 'comprobantediario',
-    component: () => import('../contabilidad/consultas/comprobantediario/index.vue'),
+    component: () => import('contabilidad_frontend/src/modules/contabilidad/consultas/comprobantediario/index.vue'),
     meta: {
       breadcrumbs: [
         // { label: 'Gestión Contable', to: { name: 'home' } },
@@ -332,7 +332,7 @@ const routes = [
   {
     path: '/contabilidad/consultas/informes-comparativos',
     name: 'infcomparativos',
-    component: () => import('../contabilidad/consultas/infcomparativos/index.vue'),
+    component: () => import('contabilidad_frontend/src/modules/contabilidad/consultas/infcomparativos/index.vue'),
     meta: {
       breadcrumbs: [
         // { label: 'Gestión Contable', to: { name: 'home' } },
@@ -345,7 +345,7 @@ const routes = [
   {
     path: '/contabilidad/consultas/auditorias',
     name: 'auxauditoria',
-    component: () => import('../contabilidad/consultas/auditoria/index.vue'),
+    component: () => import('contabilidad_frontend/src/modules/contabilidad/consultas/auditoria/index.vue'),
     meta: {
       breadcrumbs: [
         // { label: 'Gestión Contable', to: { name: 'home' } },
@@ -358,7 +358,7 @@ const routes = [
   {
     path: '/contabilidad/consultas/informe-de-cartera',
     name: 'infcartera',
-    component: () => import('../contabilidad/consultas/informecartera/index.vue'),
+    component: () => import('contabilidad_frontend/src/modules/contabilidad/consultas/informecartera/index.vue'),
     meta: {
       breadcrumbs: [
         // { label: 'Gestión Contable', to: { name: 'home' } },
@@ -370,7 +370,7 @@ const routes = [
   {
     path: '/contabilidad/consultas/informe-diario-dian',
     name: 'infcarteradian',
-    component: () => import('../contabilidad/consultas/informediariodian/index.vue'),
+    component: () => import('contabilidad_frontend/src/modules/contabilidad/consultas/informediariodian/index.vue'),
     meta: {
       breadcrumbs: [
         // { label: 'Gestión Contable', to: { name: 'home' } },
@@ -384,7 +384,7 @@ const routes = [
   {
     path: '/contabilidad/consultas/certificados',
     name: 'certificados',
-    component: () => import('../contabilidad/consultas/certificados/index.vue'),
+    component: () => import('contabilidad_frontend/src/modules/contabilidad/consultas/certificados/index.vue'),
     meta: {
       breadcrumbs: [
         // { label: 'Gestión Contable', to: { name: 'home' } },
@@ -398,7 +398,7 @@ const routes = [
   {
     path: '/contabilidad/cierres',
     name: 'contabilidad_cierres',
-    component: () => import('../contabilidad/cierres/index.vue'),
+    component: () => import('contabilidad_frontend/src/modules/contabilidad/cierres/index.vue'),
     meta: {
       breadcrumbs: [
         // { label: 'Gestión Contable', to: { name: 'home' } },
@@ -413,7 +413,7 @@ const routes = [
   {
     path: '/contabilidad/reconstrucción de movimientos',
     name: 'contabilidad_reconstruccion',
-    component: () => import('../contabilidad/reconstruccion/index.vue'),
+    component: () => import('contabilidad_frontend/src/modules/contabilidad/reconstruccion/index.vue'),
     meta: {
       breadcrumbs: [
         // { label: 'Gestión Contable', to: { name: 'home' } },
@@ -427,7 +427,7 @@ const routes = [
   {
     path: '/contabilidad/procesos/cambio_de_fechas',
     name: 'contabilidad_cabio_fechas',
-    component: () => import('../contabilidad/procesos/cambio_fechas/index.vue'),
+    component: () => import('contabilidad_frontend/src/modules/contabilidad/procesos/cambio_fechas/index.vue'),
     meta: {
       breadcrumbs: [
         // { label: 'Contabilidad', to: { name: 'home' } },
@@ -441,7 +441,7 @@ const routes = [
   {
     path: '/contabilidad/cargos_fijos',
     name: 'contabilidad_cargos_fijos',
-    component: () => import('../contabilidad/cargos_fijos/index.vue'),
+    component: () => import('contabilidad_frontend/src/modules/contabilidad/cargos_fijos/index.vue'),
     meta: {
       breadcrumbs: [
         // { label: 'Contabilidad', to: { name: 'home' } },
@@ -455,7 +455,7 @@ const routes = [
   {
     path: '/contabilidad/exogena',
     name: 'exogena',
-    component: () => import('../contabilidad/exogena/index.vue'),
+    component: () => import('contabilidad_frontend/src/modules/contabilidad/exogena/index.vue'),
     meta: {
       breadcrumbs: [
         { label: 'Contabilidad', to: { name: 'home' } },
@@ -468,7 +468,7 @@ const routes = [
   {
     path: '/contabilidad/cargos-masivos',
     name: 'cargos_masivos',
-    component: () => import('../contabilidad/cargos_masivos/index.vue'),
+    component: () => import('contabilidad_frontend/src/modules/contabilidad/cargos_masivos/index.vue'),
     meta: {
       breadcrumbs: [
         { label: 'Contabilidad', to: { name: 'home' } },
@@ -481,7 +481,7 @@ const routes = [
   {
     path: '/contabilidad/medios_distritales',
     name: 'medios_distritales',
-    component: () => import('../contabilidad/medios_distritales/index.vue'),
+    component: () => import('contabilidad_frontend/src/modules/contabilidad/medios_distritales/index.vue'),
     meta: {
       breadcrumbs: [
         { label: 'Contabilidad', to: { name: 'home' } },
@@ -494,7 +494,7 @@ const routes = [
   {
     path: '/contabilidad/procesos/cierres_especiales',
     name: 'cirres_especiales',
-    component: () => import('../contabilidad/procesos/cierre_especial/index.vue'),
+    component: () => import('contabilidad_frontend/src/modules/contabilidad/procesos/cierre_especial/index.vue'),
     meta: {
       breadcrumbs: [
         {label: 'Contabilidad',to: {name: 'home'}},
